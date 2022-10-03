@@ -3,7 +3,6 @@
 double Average(double first, double second, double* deviation)
 {
 	*deviation = first > second ? (first - second) / 2 : (second - first) / 2;
-	printf("%lf\n",&deviation);
 	return (first + second) / 2;
 }
 
@@ -13,10 +12,7 @@ int main(void)
 
 	printf("Two Real Values: ");
 	scanf("%lf%lf", &b, &c);
-	printf("%lf\n",&d);
 	a = Average(b, c, &d);
-	
-	
 	printf("Average is %lf with a devation of %lf\n", a, d);
 }
 
